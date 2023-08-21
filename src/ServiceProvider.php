@@ -1,7 +1,14 @@
 <?php
 
+declare(strict_types=1);
+
 namespace TheBachtiarz\Party;
+
 use Illuminate\Support\ServiceProvider as LaravelServiceProvider;
+
+use function app;
+use function assert;
+use function config_path;
 
 class ServiceProvider extends LaravelServiceProvider
 {

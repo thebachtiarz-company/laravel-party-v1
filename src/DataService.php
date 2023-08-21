@@ -1,9 +1,13 @@
 <?php
 
+declare(strict_types=1);
+
 namespace TheBachtiarz\Party;
 
 use TheBachtiarz\Base\BaseConfigInterface;
-use TheBachtiarz\Party\PartyConfigInterface;
+
+use function array_merge;
+use function tbbaseconfig;
 
 class DataService
 {

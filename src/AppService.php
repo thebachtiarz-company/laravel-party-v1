@@ -1,6 +1,15 @@
 <?php
 
+declare(strict_types=1);
+
 namespace TheBachtiarz\Party;
+
+use TheBachtiarz\Bmkg\Console\Commands\EarthQuakeNotifyCommand;
+
+use function app;
+use function assert;
+use function collect;
+use function config;
 
 class AppService
 {
@@ -14,7 +23,7 @@ class AppService
     /**
      * Available command modules
      */
-    public const COMMANDS = [];
+    public const COMMANDS = [EarthQuakeNotifyCommand::class];
 
     // ? Public Methods
 
