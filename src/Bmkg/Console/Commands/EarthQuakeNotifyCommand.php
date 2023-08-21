@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-namespace TheBachtiarz\Bmkg\Console\Commands;
+namespace TheBachtiarz\Party\Bmkg\Console\Commands;
 
 use TheBachtiarz\Base\App\Console\Commands\AbstractCommand;
-use TheBachtiarz\Bmkg\Services\EarthQuakeService;
+use TheBachtiarz\Party\Bmkg\Services\EarthQuakeService;
 
 use function explode;
 

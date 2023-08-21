@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-namespace TheBachtiarz\Bmkg\Libraries;
+namespace TheBachtiarz\Party\Bmkg\Libraries;
 
 use TheBachtiarz\Base\App\Libraries\Curl\CurlLibrary;
-use TheBachtiarz\Bmkg\Libraries\Live\EarthQuakeInfo;
+use TheBachtiarz\Party\Bmkg\Libraries\Live\EarthQuakeInfo;
 
 class CurlBmkgLibrary extends CurlLibrary
 {

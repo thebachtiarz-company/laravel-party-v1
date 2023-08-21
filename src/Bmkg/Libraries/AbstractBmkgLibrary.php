@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace TheBachtiarz\Bmkg\Libraries;
+namespace TheBachtiarz\Party\Bmkg\Libraries;
 
 use Illuminate\Http\Client\PendingRequest;
 use Illuminate\Http\Client\Response;

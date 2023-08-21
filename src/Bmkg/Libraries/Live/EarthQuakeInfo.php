@@ -2,13 +2,13 @@
 
 declare(strict_types=1);
 
-namespace TheBachtiarz\Bmkg\Libraries\Live;
+namespace TheBachtiarz\Party\Bmkg\Libraries\Live;
 
 use Illuminate\Http\Client\Response;
 use TheBachtiarz\Base\App\Libraries\Curl\CurlInterface;
 use TheBachtiarz\Base\App\Libraries\Curl\Data\CurlResponse;
 use TheBachtiarz\Base\App\Libraries\Curl\Data\CurlResponseInterface;
-use TheBachtiarz\Bmkg\Libraries\AbstractBmkgLibrary;
+use TheBachtiarz\Party\Bmkg\Libraries\AbstractBmkgLibrary;
 use Throwable;
 
 use function assert;

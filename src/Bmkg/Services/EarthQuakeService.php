@@ -2,13 +2,13 @@
 
 declare(strict_types=1);
 
-namespace TheBachtiarz\Bmkg\Services;
+namespace TheBachtiarz\Party\Bmkg\Services;
 
 use Illuminate\Support\Facades\Hash;
 use TheBachtiarz\Base\App\Helpers\CacheHelper;
 use TheBachtiarz\Base\App\Libraries\Curl\Data\CurlResponseInterface;
 use TheBachtiarz\Base\App\Services\AbstractService;
-use TheBachtiarz\Bmkg\Libraries\CurlBmkgLibrary;
+use TheBachtiarz\Party\Bmkg\Libraries\CurlBmkgLibrary;
 use TheBachtiarz\Party\Bmkg\Interfaces\Configs\BmkgConfigInterface;
 use TheBachtiarz\WhatsApp\Services\WhatsAppMessageService;
 use Throwable;

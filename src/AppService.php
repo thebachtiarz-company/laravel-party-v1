@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace TheBachtiarz\Party;
 
-use TheBachtiarz\Bmkg\Console\Commands\EarthQuakeNotifyCommand;
+use TheBachtiarz\Party\Bmkg\Console\Commands\EarthQuakeNotifyCommand;
 
 use function app;
 use function assert;
