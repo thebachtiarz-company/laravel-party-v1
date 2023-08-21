@@ -17,7 +17,7 @@ class EarthQuakeNotifyCommand extends AbstractCommand
     public function __construct(
         protected EarthQuakeService $earthQuakeService,
     ) {
-        $this->signature    = 'bmkg:notify:earthquake
+        $this->signature    = 'party:bmkg:notify:earthquake
                                 {--groupIds= : Group(s) ID (multiple with comma)}
                                 {--personIds= : Person(s) ID (multiple with comma)}';
         $this->commandTitle = 'Send earthquake notification';
