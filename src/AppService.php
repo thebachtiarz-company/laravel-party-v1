@@ -5,6 +5,7 @@ declare(strict_types=1);
 namespace TheBachtiarz\Party;
 
 use TheBachtiarz\Party\Bmkg\Console\Commands\EarthQuakeNotifyCommand;
+use TheBachtiarz\Party\Contact\Console\Commands\AddContactCommand;
 
 use function app;
 use function assert;
@@ -23,7 +24,10 @@ class AppService
     /**
      * Available command modules
      */
-    public const COMMANDS = [EarthQuakeNotifyCommand::class];
+    public const COMMANDS = [
+        EarthQuakeNotifyCommand::class,
+        AddContactCommand::class,
+    ];
 
     // ? Public Methods
 

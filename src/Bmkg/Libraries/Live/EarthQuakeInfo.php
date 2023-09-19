@@ -32,18 +32,15 @@ class EarthQuakeInfo extends AbstractBmkgLibrary implements CurlInterface
         try {
             $response = $response->json();
 
-            $response['status']  = 'success';
-            $response['message'] = '';
             $response['data']    = $response['Infogempa']['gempa'];
+            $response['status']  = 'success';
+            $response['message'] = 'Info gempa';
 
             $result = new CurlResponse($response);
         } catch (Throwable $th) {
             $this->logInstance()->log($th, 'curl');
-
             $result->setMessage($th->getMessage());
         } finally {
-            // $this->logInstance()->log(json_encode($result->toArray()), 'curl');
-
             return $result;
         }
     }

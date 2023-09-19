@@ -19,8 +19,9 @@ class EarthQuakeNotifyCommand extends AbstractCommand
     ) {
         $this->signature    = 'party:bmkg:notify:earthquake
                                 {--groupIds= : Group(s) ID (multiple with comma)}
-                                {--personIds= : Person(s) ID (multiple with comma)}';
-        $this->commandTitle = 'Send earthquake notification';
+                                {--personIds= : Person(s) ID (multiple with comma)}
+                                {--useContacts=2 : Use list contact(s) from config (1 => Yes | 2 => No)}';
+        $this->commandTitle = 'Send Earthquake Notification';
         $this->description  = 'Send earthquake notification to message apps';
 
         parent::__construct();
@@ -31,8 +32,10 @@ class EarthQuakeNotifyCommand extends AbstractCommand
     public function commandProcess(): bool
     {
         $prepare = $this->earthQuakeService;
+
         $prepare->setNotifyIndividuals(explode(separator: ',', string: $this->option('personIds') ?? ''));
         $prepare->setNotifyGroups(explode(separator: ',', string: $this->option('groupIds') ?? ''));
+        $prepare->useContacts($this->option('useContacts') === '1');
 
         $process = $prepare->pushNotify();
 
